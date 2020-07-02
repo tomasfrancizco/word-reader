@@ -13,6 +13,7 @@ body {
 .container {
   height: 600px;
   width: 50%;
+  min-width: 270px;
   background-color: teal;
   display: flex;
   flex-direction: column;
