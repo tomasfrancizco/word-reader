@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 600px;
+  width: 50%;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5) inset,
+  -3px -3px 5px 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+button {
+  margin: 20px 0;
+  width: 100px;
+  height: 30px;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5),
+    -3px -3px 5px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+button:active {
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5) inset,
+    -3px -3px 5px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#output {
+  height: 60px;
+  text-align: center;
+  font-size: 50px;
+}
