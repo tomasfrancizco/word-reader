@@ -1,3 +1,8 @@
+:root {
+  --main-bg-color: #56bcf4;
+  --main-cont-color: #55baf3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,30 +13,48 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--main-bg-color);
 }
 
 .container {
   height: 600px;
   width: 50%;
   min-width: 270px;
-  background-color: teal;
+  background: var(--main-cont-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5) inset,
-  -3px -3px 5px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.5),
+  -3px -3px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#textarea {
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5),
+    -3px -3px 5px 0 rgba(255, 255, 255, 0.5);
+  border: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#textarea:focus {
+  outline: 0;
+}
+
+#btn-container {
+  margin: 20px 0;
 }
 
 button {
-  margin: 20px 0;
   width: 100px;
   height: 30px;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5),
     -3px -3px 5px 0 rgba(255, 255, 255, 0.5);
   border-radius: 5px;
+  border: 0px;
 }
 
 button:active {

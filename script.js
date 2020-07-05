@@ -1,9 +1,11 @@
 const textarea = document.getElementById("textarea");
 const output = document.getElementById("output");
+const startBtn = document.getElementById("start-btn");
 
 let id;
 let start = false;
 let index = 0;
+let beenPaused = false;
 
 function print(){
   if(textarea.value){
@@ -16,7 +18,7 @@ function print(){
       }
     }, 200)
   } else {
-    const error = "Please type some input to read!";
+    const error = "Please type something to read!";
     output.innerHTML = error;
     output.style.fontSize = "20px";
   }   
@@ -25,5 +27,6 @@ function print(){
 function pause(){
   if(start == true){
     clearInterval(id)
+    startBtn.innerHTML = "Continue"
   }
 }
